@@ -260,13 +260,28 @@ section {
 
 /* Responsive pour Mobile */
 @media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+
   .ebook-container {
     grid-template-columns: 1fr;
   }
+
   .hero h1 {
     font-size: 2rem;
-  }
-  .nav-links {
-    display: none; /* À remplacer par un menu hamburger plus tard */
   }
 }

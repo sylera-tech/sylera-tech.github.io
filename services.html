@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Services | SYLERA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo">SYLERA<span>.</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html" class="highlight">Services</a>
+          <a href="index.html#ebook">E-book</a>
+          <a href="actualites.html">Actualités</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- En-tête de la page -->
+    <section class="hero" style="padding-bottom: 20px">
+      <div class="container hero-content">
+        <h1>Diagnostic & <span class="highlight">Interventions</span></h1>
+        <p>
+          Sélectionnez le problème que vous rencontrez. Nous avons la solution
+          technique adaptée.
+        </p>
+      </div>
+    </section>
+
+    <!-- SYLERA MOBILE -->
+    <section class="services-section" style="padding-top: 20px">
+      <div class="container">
+        <h2 class="section-title" style="text-align: left">
+          📱 SYLERA MOBILE
+          <span
+            style="
+              font-size: 1rem;
+              color: var(--text-muted);
+              display: block;
+              margin-top: 5px;
+            "
+            >100% Logiciel & Optimisation</span
+          >
+        </h2>
+
+        <div class="accordion-group">
+          <details>
+            <summary>
+              Téléphone étranger bloqué sur les réseaux locaux ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Déblocage Réseau (Carrier
+              Unlock) & Configuration manuelle des APN pour garantir l'accès aux
+              données mobiles (Digicel, Natcom).
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Déblocage Réseau et APN')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>
+              Téléphone bloqué sur le logo ou qui redémarre en boucle ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Flash et Unbricking. Nous
+              réinstallons le système d'exploitation proprement pour sauver un
+              appareil considéré comme "mort".
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Flash et Unbricking')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>
+              Bloqué sur "Vérification du compte Google" après réinitialisation
+              ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Bypass FRP (Factory Reset
+              Protection) pour vous redonner l'accès complet à votre appareil
+              verrouillé.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Bypass FRP (Compte Google)')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>
+              Téléphone lent et surchargé d'applications inutiles ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Nettoyage Extrême & Debloating.
+              Utilisation de commandes ADB avancées pour supprimer de force les
+              applications systèmes (bloatwares) et libérer la RAM.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="
+                commanderServiceDirect('Nettoyage Extrême & Debloating ADB')
+              "
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>Écran cassé ou changement de téléphone ?</summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Récupération et transfert
+              sécurisé de données. Nous migrons vos contacts, photos et
+              historiques WhatsApp, même depuis un appareil endommagé.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="
+                commanderServiceDirect('Récupération et Transfert de données')
+              "
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYLERA PC -->
+    <section class="services-section" style="padding-top: 20px">
+      <div class="container">
+        <h2 class="section-title" style="text-align: left">
+          💻 SYLERA PC
+          <span
+            style="
+              font-size: 1rem;
+              color: var(--text-muted);
+              display: block;
+              margin-top: 5px;
+            "
+            >Performance & Entretien</span
+          >
+        </h2>
+
+        <div class="accordion-group">
+          <details>
+            <summary>
+              PC extrêmement lent au démarrage et à l'usage ?
+              <span class="badge" style="margin-left: 10px"
+                >Le plus demandé</span
+              >
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Upgrade de la RAM et
+              remplacement de votre vieux disque dur mécanique par un SSD/NVMe
+              ultrarapide. Nous clonons l'intégralité de votre système : vous
+              retrouvez votre PC identique, mais 10x plus rapide.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Upgrade SSD/NVMe et RAM')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>
+              Surchauffe constante ou PC qui s'éteint tout seul ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Nettoyage en profondeur des
+              ventilateurs et remplacement de la pâte thermique (CPU/GPU) pour
+              éviter que vos composants ne brûlent.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Nettoyage et Pâte Thermique PC')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>Système corrompu, virus ou écran bleu ?</summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Formatage et installation
+              propre de l'OS (Windows 10/11 ou Linux), optimisation des
+              processus de démarrage et mise à jour rigoureuse de tous les
+              pilotes (Drivers).
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="
+                commanderServiceDirect('Formatage et Installation OS propre')
+              "
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>Batterie de PC portable morte ou gonflée ?</summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Remplacement sécurisé par une
+              batterie neuve pour redonner son autonomie à votre machine et
+              éviter les risques matériels.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="commanderServiceDirect('Remplacement Batterie PC')"
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+
+          <details>
+            <summary>
+              Fichiers importants perdus ou supprimés par erreur ?
+            </summary>
+            <p>
+              <strong>Solution SYLERA :</strong> Sauvegarde logicielle d'urgence
+              et récupération de données sur disques fonctionnels.
+            </p>
+            <button
+              class="btn-service-direct"
+              onclick="
+                commanderServiceDirect('Récupération de données perdues')
+              "
+            >
+              Réserver cette intervention
+            </button>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulaire de Contact Dynamique -->
+    <section id="diagnostic" class="news-section">
+      <div class="container">
+        <h2 class="section-title">Demander un Diagnostic Rapide</h2>
+
+        <form
+          id="diagnosticForm"
+          class="diagnostic-form"
+          onsubmit="handleDiagnosticForm(event)"
+        >
+          <div class="form-group">
+            <label for="deviceType">Type d'appareil</label>
+            <select id="deviceType" class="form-control" required>
+              <option value="" disabled selected>
+                Sélectionnez un appareil...
+              </option>
+              <option value="Mobile (Android/iOS)">Mobile (Android/iOS)</option>
+              <option value="PC Portable">PC Portable</option>
+              <option value="PC de Bureau">PC de Bureau</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="deviceModel">Marque & Modèle exact</label>
+            <input
+              type="text"
+              id="deviceModel"
+              class="form-control"
+              placeholder="Ex: Samsung Galaxy A03s, HP Pavilion..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="problemDesc">Description du problème</label>
+            <textarea
+              id="problemDesc"
+              class="form-control"
+              placeholder="Expliquez brièvement le blocage ou la lenteur rencontrée..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-whatsapp" style="margin-top: 10px">
+            Discuter avec un technicien sur WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Réassurance -->
+    <section class="services-section" style="padding-top: 0">
+      <div class="container">
+        <div class="reassurance-grid">
+          <div class="reassurance-card">
+            <div class="icon">🔒</div>
+            <h4>Confidentialité garantie</h4>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 5px;
+              "
+            >
+              Vos données personnelles et fichiers privés sont strictement
+              protégés lors de nos interventions.
+            </p>
+          </div>
+          <div class="reassurance-card">
+            <div class="icon">🤝</div>
+            <h4>Transparence totale</h4>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 5px;
+              "
+            >
+              Aucun formatage, effacement ou remplacement de pièce n'est
+              effectué sans votre accord préalable.
+            </p>
+          </div>
+          <div class="reassurance-card">
+            <div class="icon">⚡</div>
+            <h4>Intervention rapide</h4>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 5px;
+              "
+            >
+              Des diagnostics précis et des résultats concrets pour vous rendre
+              votre outil de travail au plus vite.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 SYLERA. Tous droits réservés.</p>
+        <p>Paiements acceptés localement : MonCash • Natcash</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

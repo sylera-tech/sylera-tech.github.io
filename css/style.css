@@ -285,3 +285,151 @@ section {
     font-size: 2rem;
   }
 }
+
+/* =========================================
+   NOUVEAUX STYLES : ACCORDÉONS SERVICES
+   ========================================= */
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+details {
+  background-color: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-btn);
+  padding: 18px 20px;
+  transition: all 0.2s ease;
+}
+
+details[open] {
+  border-color: var(--accent);
+  background-color: rgba(26, 29, 36, 0.8);
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-main);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-left: 15px;
+}
+
+details[open] summary::after {
+  content: "−";
+}
+
+details p {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   NOUVEAUX STYLES : BOUTON SERVICE DIRECT
+   ========================================= */
+.btn-service-direct {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: var(--radius-btn);
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn-service-direct:hover {
+  background: var(--accent);
+  color: #0f1115;
+}
+
+/* =========================================
+   NOUVEAUX STYLES : FORMULAIRE & RÉASSURANCE
+   ========================================= */
+.diagnostic-form {
+  background-color: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: var(--bg-base);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-main);
+  padding: 14px;
+  border-radius: var(--radius-btn);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.reassurance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reassurance-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: var(--border-subtle);
+  border-radius: var(--radius-btn);
+  padding: 25px;
+  text-align: center;
+}
+
+.reassurance-card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}

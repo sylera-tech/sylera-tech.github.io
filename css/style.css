@@ -1,0 +1,272 @@
+/* Variables de thème (Mode Sombre / Compact) */
+:root {
+  --bg-base: #0f1115; /* Noir profond (Onyx) */
+  --bg-surface: #1a1d24; /* Gris anthracite pour les cartes */
+  --text-main: #f8fafc; /* Blanc cassé lisible */
+  --text-muted: #94a3b8; /* Gris pour les textes secondaires */
+  --accent: #38bdf8; /* Bleu tech professionnel */
+  --radius-lg: 16px; /* Arrondis doux pour les sections */
+  --radius-btn: 10px; /* Arrondis précis pour les boutons */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Réinitialisation compacte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* En-tête */
+.navbar {
+  background: rgba(15, 17, 21, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.brand-logo {
+  color: var(--text-main);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.brand-logo span {
+  color: var(--accent);
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text-main);
+}
+
+/* Boutons */
+.btn-primary,
+.btn-secondary,
+.btn-whatsapp {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #0f1115;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: var(--border-subtle);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface);
+}
+
+.btn-whatsapp {
+  background-color: #25d366; /* Vert officiel WhatsApp */
+  color: #000;
+  width: 100%;
+}
+
+/* Sections Globales (Compactes) */
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Grilles (Services & News) */
+.services-grid,
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Cartes (Le Radius "Apple" / "Stripe") */
+.service-card,
+.news-card,
+.ebook-preview {
+  background-color: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 25px;
+  transition: transform 0.2s;
+}
+
+.service-card:hover,
+.news-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-card p,
+.news-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* E-book Section */
+.ebook-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.badge {
+  background-color: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ebook-details h2 {
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.ebook-features {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.ebook-features li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.pricing-block {
+  background-color: var(--bg-surface);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price-info small {
+  color: var(--text-muted);
+}
+
+/* Footer */
+.footer {
+  border-top: var(--border-subtle);
+  padding: 30px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Responsive pour Mobile */
+@media (max-width: 768px) {
+  .ebook-container {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: none; /* À remplacer par un menu hamburger plus tard */
+  }
+}

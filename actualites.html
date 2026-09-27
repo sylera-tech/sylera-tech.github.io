@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centre de Ressources | SYLERA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo">SYLERA<span>.</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#ebook">E-book</a>
+          <a href="actualites.html" class="highlight">Actualités</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- En-tête de la page -->
+    <section class="hero resource-hero">
+      <div class="container hero-content">
+        <h1 class="reveal">
+          Centre de Ressources <span class="highlight">SYLERA</span>
+        </h1>
+        <p class="reveal reveal-delay-1">
+          Alertes de sécurité, astuces d'optimisation et études de cas pour vos
+          appareils.
+        </p>
+
+        <!-- Barre de filtres -->
+        <div class="filters-bar reveal reveal-delay-2">
+          <button class="filter-btn active" data-filter="all">Tout voir</button>
+          <button class="filter-btn" data-filter="alertes">
+            Alertes & Sécurité
+          </button>
+          <button class="filter-btn" data-filter="astuces">
+            Astuces d'Optimisation
+          </button>
+          <button class="filter-btn" data-filter="cas-pratiques">
+            Cas Pratiques
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grille des articles -->
+    <section class="resources-section">
+      <div class="container">
+        <div class="resources-grid" id="resourcesGrid">
+          <!-- ALERTES & SÉCURITÉ -->
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>
+              Ne réinitialisez jamais votre téléphone sans votre mot de passe
+              Google.
+            </h3>
+            <p>
+              Une réinitialisation d'usine forcée déclenche le verrouillage FRP
+              (Factory Reset Protection). Sans l'e-mail et le mot de passe
+              d'origine, le téléphone devient inutilisable.
+            </p>
+            <span class="action-text"
+              >Votre téléphone est bloqué sur cet écran ? Contactez-nous pour un
+              Bypass FRP.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>Les faux SMS de gain sur les réseaux locaux.</h3>
+            <p>
+              Des campagnes de phishing ciblent régulièrement les numéros
+              Digicel et Natcom avec de faux transferts. Ne cliquez jamais sur
+              les liens réclamant vos identifiants.
+            </p>
+            <span class="action-text"
+              >Vous avez cliqué et craignez un piratage ? Faites vérifier votre
+              appareil.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>
+              Pourquoi les applications "Antivirus" et "Nettoyeur de RAM"
+              gratuits détruisent vos performances.
+            </h3>
+            <p>
+              La majorité de ces applications tournent en arrière-plan,
+              affichent des publicités et ralentissent votre système.
+            </p>
+            <span class="action-text"
+              >Passez par SYLERA pour un véritable nettoyage en profondeur via
+              ADB.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>
+              Mises à jour système : Faut-il les installer immédiatement ?
+            </h3>
+            <p>
+              Certaines mises à jour majeures provoquent des bugs ou des
+              blocages sur le logo de démarrage (Bootloop).
+            </p>
+            <span class="action-text"
+              >Téléphone bloqué après une mise à jour ? Nous pouvons flasher le
+              système.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>Le danger silencieux des chargeurs contrefaits.</h3>
+            <p>
+              Un chargeur de mauvaise qualité ne gère pas les variations de
+              tension et finit par griller la puce de charge (IC) de votre carte
+              mère.
+            </p>
+            <span class="action-text"
+              >Utilisez toujours des blocs d'alimentation certifiés.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>
+              Vos mots de passe sur PC sont en danger sans session verrouillée.
+            </h3>
+            <p>
+              Si votre session Windows n'a pas de mot de passe, n'importe qui
+              peut afficher en clair tous les mots de passe enregistrés dans
+              Google Chrome.
+            </p>
+            <span class="action-text"
+              >Sécurisez votre machine ou demandez-nous de configurer vos
+              accès.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>Le virus des clés USB (Fichiers transformés en raccourcis).</h3>
+            <p>
+              Vous branchez votre clé et vos dossiers sont devenus des
+              raccourcis ? Ne les supprimez pas, vos données sont juste masquées
+              par un malware.
+            </p>
+            <span class="action-text"
+              >Confiez-nous votre PC et votre clé pour une désinfection sans
+              perte de données.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="alertes"
+          >
+            <span class="badge badge-alert">Alertes & Sécurité</span>
+            <h3>Les bornes de recharge USB publiques (Juice Jacking).</h3>
+            <p>
+              Brancher directement un câble USB dans une borne publique peut
+              permettre le transfert de logiciels malveillants vers votre
+              téléphone.
+            </p>
+            <span class="action-text"
+              >Utilisez toujours votre propre bloc chargeur sur une prise de
+              courant standard.</span
+            >
+          </article>
+
+          <!-- ASTUCES D'OPTIMISATION -->
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>Accélérez visuellement votre Android en 1 minute.</h3>
+            <p>
+              Activez le "Mode Développeur" et réduisez les "Échelles
+              d'animation" de 1x à 0.5x. Votre téléphone paraîtra instantanément
+              plus réactif.
+            </p>
+            <span class="action-text"
+              >Besoin d'aller plus loin ? Optez pour notre service de Debloating
+              complet.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>
+              Stockage plein ? Videz le cache WhatsApp sans perdre vos messages.
+            </h3>
+            <p>
+              WhatsApp stocke des gigaoctets de données temporaires. Allez dans
+              les paramètres de stockage pour libérer de l'espace sans toucher à
+              vos chats.
+            </p>
+            <span class="action-text"
+              >Manque d'espace chronique ? Laissez-nous optimiser votre
+              stockage.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>
+              Pourquoi fermer constamment vos applications vide votre batterie.
+            </h3>
+            <p>
+              Relancer une application depuis zéro consomme plus de processeur
+              et de batterie que de la laisser en veille dans la RAM.
+            </p>
+            <span class="action-text"
+              >Laissez le système gérer la RAM et contactez-nous pour optimiser
+              les processus en arrière-plan.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>
+              Préservez la batterie de votre PC portable (La règle des 80%).
+            </h3>
+            <p>
+              Laisser son PC branché en permanence à 100% fait gonfler et mourir
+              la batterie prématurément.
+            </p>
+            <span class="action-text"
+              >Batterie déjà morte ou gonflée ? Nous la remplaçons à neuf.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>Chrome consomme trop de mémoire ? Activez cette option.</h3>
+            <p>
+              Allez dans les paramètres de Chrome, onglet "Performances", et
+              activez l'Économiseur de mémoire pour mettre en veille les onglets
+              inactifs.
+            </p>
+            <span class="action-text"
+              >Votre PC rame même avec cette astuce ? Il est temps d'ajouter de
+              la RAM.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>Désactivez les programmes inutiles au démarrage de Windows.</h3>
+            <p>
+              Ouvrez le Gestionnaire des tâches (Ctrl+Maj+Echap), onglet
+              "Démarrage", et désactivez les logiciels qui ralentissent
+              l'allumage du PC.
+            </p>
+            <span class="action-text"
+              >Demandez un diagnostic PC pour un nettoyage logiciel
+              complet.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>Reconnaître un disque dur (HDD) qui va mourir.</h3>
+            <p>
+              Lenteurs extrêmes, démarrages qui durent 5 minutes, bruits de
+              cliquetis mécaniques : vos données sont en danger imminent.
+            </p>
+            <span class="action-text"
+              >Sauvegardez tout et passez au SSD dès aujourd'hui.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="astuces"
+          >
+            <span class="badge badge-astuce">Astuces d'Optimisation</span>
+            <h3>Le mode économie d'énergie : Quand faut-il l'utiliser ?</h3>
+            <p>
+              Ne l'activez pas en permanence. Il bride les performances du
+              processeur. Utilisez-le uniquement sous les 20%.
+            </p>
+            <span class="action-text"
+              >La batterie se vide trop vite même à 100% ? Venez faire un test
+              de cycle.</span
+            >
+          </article>
+
+          <!-- CAS PRATIQUES -->
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>
+              Le miracle du SSD : Démarrage passé de 4 minutes à 15 secondes.
+            </h3>
+            <p>
+              Un client nous a apporté un PC de 2018 inutilisable. Nous avons
+              remplacé le vieux disque mécanique par un SSD et cloné son
+              système.
+            </p>
+            <span class="action-text"
+              >Redonnez 5 ans de vie à votre machine pour une fraction du prix
+              d'un PC neuf.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>
+              Surchauffe extrême : Un PC qui s'éteignait en plein travail.
+            </h3>
+            <p>
+              L'ordinateur atteignait 95°C. Après un dépoussiérage intégral et
+              une nouvelle pâte thermique, la température a chuté de 30°C.
+            </p>
+            <span class="action-text"
+              >Votre PC chauffe ou fait trop de bruit ? Prenez rendez-vous pour
+              un entretien physique.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>Debloating massif : Résurrection d'un Motorola Moto G Pure.</h3>
+            <p>
+              Appareil saturé par les applications constructeur. Via des
+              commandes ADB ciblées, nous avons libéré la mémoire et restauré
+              une fluidité parfaite.
+            </p>
+            <span class="action-text"
+              >Votre téléphone est lent ? Confiez-nous son optimisation
+              logicielle.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>Déblocage Réseau : Samsung Galaxy A03s importé.</h3>
+            <p>
+              Client bloqué sur un réseau américain. Déblocage officiel Wi-Fi
+              effectué et configuration manuelle des APN pour fonctionner
+              parfaitement.
+            </p>
+            <span class="action-text"
+              >Téléphone acheté à l'étranger ? Nous le débloquons pour le réseau
+              local.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>Bypass FRP réussi sur un smartphone d'occasion.</h3>
+            <p>
+              Téléphone réinitialisé mais bloqué sur l'écran Google.
+              Contournement de la sécurité FRP effectué avec succès.
+            </p>
+            <span class="action-text"
+              >Bloqué à l'étape d'activation ? Nous avons la solution
+              logicielle.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-3"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>Sauvetage in extremis : Bootloop sur logo.</h3>
+            <p>
+              Le téléphone redémarrait sur le logo après une mise à jour ratée.
+              Flashage propre du système d'origine (Unbricking) pour sauver la
+              carte mère.
+            </p>
+            <span class="action-text"
+              >N'abandonnez pas un appareil planté sans nous l'avoir
+              montré.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-1"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>Récupération de données sur écran totalement noir.</h3>
+            <p>
+              Écran détruit après une chute, mais carte mère fonctionnelle.
+              Extraction sécurisée des contacts et photos vers un nouvel
+              appareil.
+            </p>
+            <span class="action-text"
+              >Écran cassé ? Vos données ne sont pas forcément perdues.</span
+            >
+          </article>
+
+          <article
+            class="resource-card reveal reveal-delay-2"
+            data-category="cas-pratiques"
+          >
+            <span class="badge badge-cas">Cas Pratiques</span>
+            <h3>PC infesté de malwares : Formatage chirurgical.</h3>
+            <p>
+              Machine paralysée par des virus. Sauvegarde des données du client,
+              formatage complet sous Windows 11, et réintégration propre des
+              fichiers.
+            </p>
+            <span class="action-text"
+              >Virus tenace ? Repartez sur un système sain et sécurisé.</span
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 SYLERA. Tous droits réservés.</p>
+        <p>Paiements acceptés localement : MonCash • Natcash</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

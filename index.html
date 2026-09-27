@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SYLERA | Solutions Tech & Optimisation</title>
-    <meta
-      name="description"
-      content="Services informatiques, optimisation de systèmes et e-books techniques par SYLERA."
-    />
+    <title>SYLERA | Optimisation & Dépannage Tech</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- En-tête / Navigation -->
+    <!-- Navigation -->
     <header class="navbar">
       <div class="container nav-container">
         <a href="index.html" class="brand-logo">SYLERA<span>.</span></a>
@@ -19,116 +15,225 @@
           <a href="index.html" class="highlight">Accueil</a>
           <a href="services.html">Services</a>
           <a href="#ebook">E-book</a>
-          <a href="#actualites">Actualités</a>
+          <a href="actualites.html">Actualités</a>
         </nav>
       </div>
     </header>
 
-    <!-- Section Hero -->
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-content">
-        <h1>
-          Optimisez vos appareils & maîtrisez la technologie avec
-          <span class="highlight">SYLERA</span>.
+        <h1 class="reveal">
+          Libérez le plein potentiel de
+          <span class="highlight">vos appareils</span>
         </h1>
-        <p>
-          Expertise technique, dépannage, guides pratiques et actualités pour
-          booster vos performances numériques.
+        <p class="reveal reveal-delay-1">
+          Experts en optimisation logicielle, nettoyage extrême et dépannage
+          matériel pour PC et smartphones. Ne jetez plus vos appareils lents,
+          nous les ressuscitons.
         </p>
-        <div class="hero-actions">
-          <a href="#ebook" class="btn-primary">Découvrir l'E-book</a>
-          <a href="services.html" class="btn-secondary">Nos Services</a>
+        <div class="hero-actions reveal reveal-delay-2">
+          <a href="services.html" class="btn-primary">Voir nos interventions</a>
+          <a href="services.html#diagnostic" class="btn-secondary"
+            >Demander un diagnostic</a
+          >
         </div>
       </div>
     </section>
 
-    <!-- Section Services (Teaser) -->
+    <!-- Aperçu des Services -->
     <section class="services-section">
-      <div class="container" style="text-align: center">
-        <h2 class="section-title">Nos Domaines d'Intervention</h2>
-        <p
-          style="
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-          "
-        >
-          De l'optimisation logicielle de vos smartphones à la réparation
-          matérielle de vos PC, nous avons une solution pour chaque problème.
-        </p>
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-          "
-        >
-          <a href="services.html" class="btn-secondary">📱 SYLERA MOBILE</a>
-          <a href="services.html" class="btn-secondary">💻 SYLERA PC</a>
-        </div>
-      </div>
-    </section>
+      <div class="container">
+        <h2 class="section-title reveal">Nos Domaines d'Expertise</h2>
+        <div class="services-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="icon">📱</div>
+            <h3>Optimisation Mobile</h3>
+            <p>
+              Debloating ADB, Bypass FRP, Déblocage réseau et sauvetage de
+              téléphones bloqués sur le logo.
+            </p>
+            <a
+              href="services.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-top: 15px;
+                display: inline-block;
+              "
+              >En savoir plus →</a
+            >
+          </div>
 
-    <!-- Section E-book (Produit Phare) -->
-    <section id="ebook" class="ebook-section">
-      <div class="container ebook-container">
-        <div class="ebook-preview">
-          <div class="ebook-placeholder-img">
-            <span>50 ASTUCES</span>
-            <small>Guide d'optimisation</small>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="icon">💻</div>
+            <h3>Performance PC</h3>
+            <p>
+              Clonage et passage au SSD, upgrade RAM, nettoyage de virus et
+              remplacement de pâte thermique.
+            </p>
+            <a
+              href="services.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-top: 15px;
+                display: inline-block;
+              "
+              >En savoir plus →</a
+            >
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <div class="icon">💾</div>
+            <h3>Récupération & Données</h3>
+            <p>
+              Sauvegarde d'urgence et transfert sécurisé de vos fichiers depuis
+              des appareils endommagés.
+            </p>
+            <a
+              href="services.html"
+              style="
+                color: var(--accent);
+                text-decoration: none;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-top: 15px;
+                display: inline-block;
+              "
+              >En savoir plus →</a
+            >
           </div>
         </div>
-        <div class="ebook-details">
-          <span class="badge">Produit Numérique</span>
-          <h2>E-book : 50 Astuces pour Maximiser vos Appareils</h2>
-          <p>
-            Le guide ultime pour transformer la vitesse de votre smartphone et
-            PC sans dépenser en matériel. Procédures étape par étape, commandes
-            ADB et réglages cachés.
+      </div>
+    </section>
+
+    <!-- Section E-book -->
+    <section
+      id="ebook"
+      style="background-color: var(--bg-surface); padding: 80px 0"
+    >
+      <div class="container ebook-container">
+        <div class="ebook-visual reveal" style="text-align: center">
+          <div
+            style="
+              background: linear-gradient(135deg, #1e293b, #0f1115);
+              border: 1px solid var(--accent);
+              border-radius: var(--radius-lg);
+              padding: 60px 30px;
+              box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+              max-width: 320px;
+              margin: 0 auto;
+              transform: rotate(-2deg);
+              transition: transform 0.3s ease;
+            "
+            onmouseover="this.style.transform = 'rotate(0deg)'"
+            onmouseout="this.style.transform = 'rotate(-2deg)'"
+          >
+            <h3
+              style="
+                color: var(--accent);
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+              "
+            >
+              50 Astuces
+            </h3>
+            <p
+              style="
+                color: var(--text-main);
+                font-weight: 600;
+                font-size: 1.1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+              "
+            >
+              d'Optimisation
+            </p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.8rem;
+                margin-bottom: 25px;
+              "
+            >
+              Édition 2026 • SYLERA
+            </p>
+            <div style="font-size: 3.5rem">📖</div>
+          </div>
+        </div>
+
+        <div class="ebook-details reveal reveal-delay-1">
+          <span class="badge">Nouveau</span>
+          <h2>Le Guide Ultime d'Optimisation</h2>
+          <p
+            style="
+              color: var(--text-muted);
+              font-size: 1.05rem;
+              margin-bottom: 20px;
+            "
+          >
+            Découvrez les secrets des techniciens pour accélérer vos appareils
+            vous-même, sans dépenser un centime en matériel supplémentaire.
           </p>
+
           <ul class="ebook-features">
-            <li>✓ Format PDF haute qualité, lisible sur mobile et PC</li>
-            <li>✓ Solutions éprouvées sans risques pour vos composants</li>
-            <li>✓ Accès immédiat après validation du paiement</li>
+            <li>✨ Accélérez un PC ou smartphone lent en 5 minutes</li>
+            <li>🔒 Protégez votre vie privée et sécurisez vos comptes</li>
+            <li>🔋 Doublez la durée de vie de votre batterie</li>
+            <li>⚙️ Commandes secrètes et réglages cachés</li>
           </ul>
+
           <div class="pricing-block">
             <div class="price-info">
-              <span class="price">Payer par MonCash / Natcash</span>
-              <small
-                >Contactez-nous directement sur WhatsApp pour valider la
-                commande</small
-              >
+              <span class="price">Disponible en PDF</span>
+              <small>Paiement sécurisé via MonCash / Natcash</small>
             </div>
             <button class="btn-whatsapp" onclick="orderEbook()">
-              Commander via WhatsApp
+              Acheter sur WhatsApp
             </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Actualités Récents -->
-    <section id="actualites" class="news-section">
-      <div class="container">
-        <h2 class="section-title">Actualités & Tutos SYLERA</h2>
-        <div class="news-grid">
-          <article class="news-card">
-            <span class="news-date">Septembre 2026</span>
-            <h3>Lancement officiel de la plateforme web SYLERA</h3>
-            <p>
-              Retrouvez désormais nos guides, services et mises à jour
-              techniques sur notre nouvel espace dédié.
-            </p>
-            <a href="actualites.html" class="read-more">Lire la suite →</a>
-          </article>
+    <!-- Section Actualités -->
+    <section class="news-section">
+      <div
+        class="container reveal"
+        style="text-align: center; max-width: 800px"
+      >
+        <h2 class="section-title" style="margin-bottom: 15px">
+          Dernières Astuces & Alertes Sécurité
+        </h2>
+        <p
+          class="reveal reveal-delay-1"
+          style="
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+          "
+        >
+          Consultez notre centre de ressources pour rester informé des dernières
+          failles de sécurité, identifier les pannes matérielles et apprendre à
+          entretenir vos équipements.
+        </p>
+        <div class="reveal reveal-delay-2">
+          <a href="actualites.html" class="btn-secondary"
+            >Accéder au Centre de Ressources</a
+          >
         </div>
       </div>
     </section>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-content">
         <p>&copy; 2026 SYLERA. Tous droits réservés.</p>

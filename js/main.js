@@ -60,3 +60,65 @@ function commanderServiceDirect(nomProbleme) {
     
     window.open(whatsappUrl, '_blank');
 }
+
+/* =========================================
+   SYSTÈME DE FILTRE (PAGE ACTUALITÉS)
+   ========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const resourceCards = document.querySelectorAll('.resource-card');
+
+    // Vérifie si on est bien sur la page actualités
+    if (filterButtons.length > 0 && resourceCards.length > 0) {
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 1. Retirer la classe active de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // 2. Ajouter la classe active au bouton cliqué
+                button.classList.add('active');
+                
+                // 3. Récupérer la catégorie cliquée
+                const filterValue = button.getAttribute('data-filter');
+                
+                // 4. Filtrer les cartes
+                resourceCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || filterValue === cardCategory) {
+                        card.style.display = 'flex'; // flex pour garder la structure de la carte
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+});
+
+/* =========================================
+   ANIMATION AU DÉFILEMENT (Fade Up)
+   ========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15 // L'animation se déclenche quand 15% de l'élément est visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Ajoute la classe qui déclenche l'animation CSS
+                entry.target.classList.add('active');
+                // Optionnel : on arrête d'observer pour que l'animation ne se joue qu'une seule fois
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Sélectionne tous les éléments avec la classe .reveal et les observe
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(el => observer.observe(el));
+});
